@@ -1,0 +1,519 @@
+DEBUG 2020-09-19 23:00:26,119 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG 2020-09-19 23:00:26,121 [urllib3.connectionpool]  [connectionpool.py _new_conn:205] - Starting new HTTP connection (1): 127.0.0.1:12351
+DEBUG 2020-09-19 23:00:28,862 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session HTTP/1.1" 200 718
+DEBUG 2020-09-19 23:00:28,870 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:00:28,871 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/window/maximize {}
+DEBUG 2020-09-19 23:00:30,990 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/window/maximize HTTP/1.1" 200 51
+DEBUG 2020-09-19 23:00:30,991 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:00:30,991 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/url {"url": "http://192.168.0.104:89/bugfree/index.php/site/login"}
+DEBUG 2020-09-19 23:00:33,179 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/url HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:33,179 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:33,180 [root]  [base.py __init__:23] - 打开bugfree网站！
+DEBUG 2020-09-19 23:00:33,180 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"LoginForm_username\"]"}
+DEBUG 2020-09-19 23:00:33,195 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:33,196 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:33,196 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:00:33,196 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:00:33,196 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/aff82a4c-1103-4d2a-8b3b-d1ecfb468001/clear {"id": "aff82a4c-1103-4d2a-8b3b-d1ecfb468001"}
+DEBUG 2020-09-19 23:00:33,234 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/aff82a4c-1103-4d2a-8b3b-d1ecfb468001/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:33,234 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:33,235 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:00:33,235 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/aff82a4c-1103-4d2a-8b3b-d1ecfb468001/value {"text": "admin888", "value": ["a", "d", "m", "i", "n", "8", "8", "8"], "id": "aff82a4c-1103-4d2a-8b3b-d1ecfb468001"}
+DEBUG 2020-09-19 23:00:33,322 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/aff82a4c-1103-4d2a-8b3b-d1ecfb468001/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:33,323 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:33,323 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:00:33,323 [root]  [page_login.py page_input_username:21] - 输入用户名了！
+DEBUG 2020-09-19 23:00:33,323 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"LoginForm_password\"]"}
+DEBUG 2020-09-19 23:00:33,335 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:33,335 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:33,335 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:00:33,335 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:00:33,335 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/b7d0f39f-8904-4a1e-ade2-4d65dab7c52c/clear {"id": "b7d0f39f-8904-4a1e-ade2-4d65dab7c52c"}
+DEBUG 2020-09-19 23:00:33,370 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/b7d0f39f-8904-4a1e-ade2-4d65dab7c52c/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:33,370 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:33,370 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:00:33,370 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/b7d0f39f-8904-4a1e-ade2-4d65dab7c52c/value {"text": "123456", "value": ["1", "2", "3", "4", "5", "6"], "id": "b7d0f39f-8904-4a1e-ade2-4d65dab7c52c"}
+DEBUG 2020-09-19 23:00:33,432 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/b7d0f39f-8904-4a1e-ade2-4d65dab7c52c/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:33,432 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:33,432 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:00:33,432 [root]  [page_login.py page_input_password:28] - 输入密码了！
+DEBUG 2020-09-19 23:00:33,432 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"SubmitLoginBTN\"]"}
+DEBUG 2020-09-19 23:00:33,442 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:33,442 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:33,442 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:00:33,443 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/acaa114b-b0e2-429c-9e1c-9e9c5ee1730f/click {"id": "acaa114b-b0e2-429c-9e1c-9e9c5ee1730f"}
+DEBUG 2020-09-19 23:00:35,599 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/acaa114b-b0e2-429c-9e1c-9e9c5ee1730f/click HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:35,600 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:35,600 [root]  [base.py base_click:42] - 点击了元素！
+INFO 2020-09-19 23:00:35,600 [root]  [page_login.py page_click_btn:34] - 点击按钮了！
+DEBUG 2020-09-19 23:00:35,600 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:00:35,615 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:35,615 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:35,615 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:00:35,615 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/11f76884-37b8-41bb-8a91-c95aad632b72/text {"id": "11f76884-37b8-41bb-8a91-c95aad632b72"}
+DEBUG 2020-09-19 23:00:35,630 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "GET /session/d18c033db932a38c7e7963507e9b3117/element/11f76884-37b8-41bb-8a91-c95aad632b72/text HTTP/1.1" 200 51
+DEBUG 2020-09-19 23:00:35,630 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:00:35,630 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:00:35,636 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:35,636 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:35,636 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:00:35,636 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/11f76884-37b8-41bb-8a91-c95aad632b72/text {"id": "11f76884-37b8-41bb-8a91-c95aad632b72"}
+DEBUG 2020-09-19 23:00:35,646 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "GET /session/d18c033db932a38c7e7963507e9b3117/element/11f76884-37b8-41bb-8a91-c95aad632b72/text HTTP/1.1" 200 51
+DEBUG 2020-09-19 23:00:35,646 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:35,646 [root]  [test_login.py test_login:36] - 用户名不存在 申请访问权限  
+INFO 2020-09-19 23:00:35,646 [root]  [test_login.py test_login:37] - 用户名不存在 申请访问权限  
+DEBUG 2020-09-19 23:00:35,646 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"LoginForm_username\"]"}
+DEBUG 2020-09-19 23:00:35,656 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:35,656 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:35,656 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:00:35,656 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:00:35,656 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/e8d2553a-8efc-4f6a-965e-3faf33f40e5d/clear {"id": "e8d2553a-8efc-4f6a-965e-3faf33f40e5d"}
+DEBUG 2020-09-19 23:00:35,696 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/e8d2553a-8efc-4f6a-965e-3faf33f40e5d/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:35,696 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:35,697 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:00:35,697 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/e8d2553a-8efc-4f6a-965e-3faf33f40e5d/value {"text": "admin", "value": ["a", "d", "m", "i", "n"], "id": "e8d2553a-8efc-4f6a-965e-3faf33f40e5d"}
+DEBUG 2020-09-19 23:00:35,738 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/e8d2553a-8efc-4f6a-965e-3faf33f40e5d/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:35,738 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:35,738 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:00:35,738 [root]  [page_login.py page_input_username:21] - 输入用户名了！
+DEBUG 2020-09-19 23:00:35,738 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"LoginForm_password\"]"}
+DEBUG 2020-09-19 23:00:35,744 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:35,744 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:35,744 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:00:35,744 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:00:35,744 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/fba39380-729e-4eed-970f-8b3c4aa9d62e/clear {"id": "fba39380-729e-4eed-970f-8b3c4aa9d62e"}
+DEBUG 2020-09-19 23:00:35,774 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/fba39380-729e-4eed-970f-8b3c4aa9d62e/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:35,774 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:35,774 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:00:35,774 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/fba39380-729e-4eed-970f-8b3c4aa9d62e/value {"text": "1111111", "value": ["1", "1", "1", "1", "1", "1", "1"], "id": "fba39380-729e-4eed-970f-8b3c4aa9d62e"}
+DEBUG 2020-09-19 23:00:35,816 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/fba39380-729e-4eed-970f-8b3c4aa9d62e/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:35,816 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:35,816 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:00:35,816 [root]  [page_login.py page_input_password:28] - 输入密码了！
+DEBUG 2020-09-19 23:00:35,817 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"SubmitLoginBTN\"]"}
+DEBUG 2020-09-19 23:00:35,821 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:35,822 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:35,822 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:00:35,822 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/bd452d52-1c8f-4e65-a68d-68a2a85e8335/click {"id": "bd452d52-1c8f-4e65-a68d-68a2a85e8335"}
+DEBUG 2020-09-19 23:00:37,974 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/bd452d52-1c8f-4e65-a68d-68a2a85e8335/click HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:37,975 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:37,975 [root]  [base.py base_click:42] - 点击了元素！
+INFO 2020-09-19 23:00:37,975 [root]  [page_login.py page_click_btn:34] - 点击按钮了！
+DEBUG 2020-09-19 23:00:37,975 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:00:37,985 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:37,985 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:37,985 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:00:37,985 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/3e185a1f-0a00-46e4-947d-d54fd8c9ff5e/text {"id": "3e185a1f-0a00-46e4-947d-d54fd8c9ff5e"}
+DEBUG 2020-09-19 23:00:37,999 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "GET /session/d18c033db932a38c7e7963507e9b3117/element/3e185a1f-0a00-46e4-947d-d54fd8c9ff5e/text HTTP/1.1" 200 41
+DEBUG 2020-09-19 23:00:37,999 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:00:37,999 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:00:38,005 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:38,005 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:38,005 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:00:38,006 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/3e185a1f-0a00-46e4-947d-d54fd8c9ff5e/text {"id": "3e185a1f-0a00-46e4-947d-d54fd8c9ff5e"}
+DEBUG 2020-09-19 23:00:38,012 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "GET /session/d18c033db932a38c7e7963507e9b3117/element/3e185a1f-0a00-46e4-947d-d54fd8c9ff5e/text HTTP/1.1" 200 41
+DEBUG 2020-09-19 23:00:38,012 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:38,012 [root]  [test_login.py test_login:36] - 用户名和密码不匹配  
+INFO 2020-09-19 23:00:38,012 [root]  [test_login.py test_login:37] - 用户名和密码不匹配  
+DEBUG 2020-09-19 23:00:38,012 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"LoginForm_username\"]"}
+DEBUG 2020-09-19 23:00:38,018 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:38,019 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:38,019 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:00:38,019 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:00:38,019 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/6c4fc5d6-1781-4360-adee-43a6a2a8de32/clear {"id": "6c4fc5d6-1781-4360-adee-43a6a2a8de32"}
+DEBUG 2020-09-19 23:00:38,047 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/6c4fc5d6-1781-4360-adee-43a6a2a8de32/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:38,048 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:38,048 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:00:38,048 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/6c4fc5d6-1781-4360-adee-43a6a2a8de32/value {"text": "admin", "value": ["a", "d", "m", "i", "n"], "id": "6c4fc5d6-1781-4360-adee-43a6a2a8de32"}
+DEBUG 2020-09-19 23:00:38,090 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/6c4fc5d6-1781-4360-adee-43a6a2a8de32/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:38,090 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:38,090 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:00:38,090 [root]  [page_login.py page_input_username:21] - 输入用户名了！
+DEBUG 2020-09-19 23:00:38,090 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"LoginForm_password\"]"}
+DEBUG 2020-09-19 23:00:38,097 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:38,097 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:38,097 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:00:38,097 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:00:38,097 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/30142034-035f-4bcc-85a5-45cce8a2bc98/clear {"id": "30142034-035f-4bcc-85a5-45cce8a2bc98"}
+DEBUG 2020-09-19 23:00:38,129 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/30142034-035f-4bcc-85a5-45cce8a2bc98/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:38,129 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:38,129 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:00:38,129 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/30142034-035f-4bcc-85a5-45cce8a2bc98/value {"text": "222222", "value": ["2", "2", "2", "2", "2", "2"], "id": "30142034-035f-4bcc-85a5-45cce8a2bc98"}
+DEBUG 2020-09-19 23:00:38,171 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/30142034-035f-4bcc-85a5-45cce8a2bc98/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:38,171 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:38,172 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:00:38,172 [root]  [page_login.py page_input_password:28] - 输入密码了！
+DEBUG 2020-09-19 23:00:38,172 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"SubmitLoginBTN\"]"}
+DEBUG 2020-09-19 23:00:38,177 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:38,177 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:38,177 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:00:38,177 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/a3f7926c-ab61-4690-b22f-8747cdd7d7f1/click {"id": "a3f7926c-ab61-4690-b22f-8747cdd7d7f1"}
+DEBUG 2020-09-19 23:00:40,336 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element/a3f7926c-ab61-4690-b22f-8747cdd7d7f1/click HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:40,337 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:40,337 [root]  [base.py base_click:42] - 点击了元素！
+INFO 2020-09-19 23:00:40,337 [root]  [page_login.py page_click_btn:34] - 点击按钮了！
+DEBUG 2020-09-19 23:00:40,337 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:00:40,346 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:40,347 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:40,347 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:00:40,347 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/dcfecee7-017a-4d81-8c39-e276669e790c/text {"id": "dcfecee7-017a-4d81-8c39-e276669e790c"}
+DEBUG 2020-09-19 23:00:40,361 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "GET /session/d18c033db932a38c7e7963507e9b3117/element/dcfecee7-017a-4d81-8c39-e276669e790c/text HTTP/1.1" 200 41
+DEBUG 2020-09-19 23:00:40,361 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:00:40,361 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:00:40,369 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "POST /session/d18c033db932a38c7e7963507e9b3117/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:00:40,369 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:40,369 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:00:40,369 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117/element/dcfecee7-017a-4d81-8c39-e276669e790c/text {"id": "dcfecee7-017a-4d81-8c39-e276669e790c"}
+DEBUG 2020-09-19 23:00:40,377 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "GET /session/d18c033db932a38c7e7963507e9b3117/element/dcfecee7-017a-4d81-8c39-e276669e790c/text HTTP/1.1" 200 41
+DEBUG 2020-09-19 23:00:40,377 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:00:40,377 [root]  [test_login.py test_login:36] - 用户名和密码不匹配  
+INFO 2020-09-19 23:00:40,377 [root]  [test_login.py test_login:37] - 密码错误
+DEBUG 2020-09-19 23:00:40,379 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - DELETE http://127.0.0.1:12351/session/d18c033db932a38c7e7963507e9b3117 {}
+DEBUG 2020-09-19 23:00:40,414 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12351 "DELETE /session/d18c033db932a38c7e7963507e9b3117 HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:00:40,415 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:20:23,377 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG 2020-09-19 23:20:23,377 [urllib3.connectionpool]  [connectionpool.py _new_conn:205] - Starting new HTTP connection (1): 127.0.0.1:12916
+DEBUG 2020-09-19 23:20:26,051 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session HTTP/1.1" 200 720
+DEBUG 2020-09-19 23:20:26,051 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:20:26,052 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/window/maximize {}
+DEBUG 2020-09-19 23:20:28,174 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/window/maximize HTTP/1.1" 200 51
+DEBUG 2020-09-19 23:20:28,174 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:20:28,175 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/url {"url": "http://192.168.0.104:89/bugfree/index.php/site/login"}
+DEBUG 2020-09-19 23:20:30,363 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/url HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:30,364 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:30,364 [root]  [base.py __init__:23] - 打开bugfree网站！
+DEBUG 2020-09-19 23:20:30,364 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"LoginForm_username\"]"}
+DEBUG 2020-09-19 23:20:30,378 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:30,378 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:30,378 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:20:30,378 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:20:30,378 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/ed426cf2-d6d3-4fba-9d74-dddadf7b834f/clear {"id": "ed426cf2-d6d3-4fba-9d74-dddadf7b834f"}
+DEBUG 2020-09-19 23:20:30,415 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/ed426cf2-d6d3-4fba-9d74-dddadf7b834f/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:30,416 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:30,416 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:20:30,416 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/ed426cf2-d6d3-4fba-9d74-dddadf7b834f/value {"text": "admin888", "value": ["a", "d", "m", "i", "n", "8", "8", "8"], "id": "ed426cf2-d6d3-4fba-9d74-dddadf7b834f"}
+DEBUG 2020-09-19 23:20:30,485 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/ed426cf2-d6d3-4fba-9d74-dddadf7b834f/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:30,486 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:30,486 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:20:30,486 [root]  [page_login.py page_input_username:21] - 输入用户名了！
+DEBUG 2020-09-19 23:20:30,486 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"LoginForm_password\"]"}
+DEBUG 2020-09-19 23:20:30,496 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:30,496 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:30,496 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:20:30,496 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:20:30,496 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/8265aaa0-7f5d-44c2-b9c1-f919a3db4b77/clear {"id": "8265aaa0-7f5d-44c2-b9c1-f919a3db4b77"}
+DEBUG 2020-09-19 23:20:30,525 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/8265aaa0-7f5d-44c2-b9c1-f919a3db4b77/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:30,525 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:30,525 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:20:30,525 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/8265aaa0-7f5d-44c2-b9c1-f919a3db4b77/value {"text": "123456", "value": ["1", "2", "3", "4", "5", "6"], "id": "8265aaa0-7f5d-44c2-b9c1-f919a3db4b77"}
+DEBUG 2020-09-19 23:20:30,569 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/8265aaa0-7f5d-44c2-b9c1-f919a3db4b77/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:30,569 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:30,570 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:20:30,570 [root]  [page_login.py page_input_password:28] - 输入密码了！
+DEBUG 2020-09-19 23:20:30,570 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"SubmitLoginBTN\"]"}
+DEBUG 2020-09-19 23:20:30,578 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:30,579 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:30,579 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:20:30,579 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/0b045e59-1602-4ca9-bb82-31ac48ff1df6/click {"id": "0b045e59-1602-4ca9-bb82-31ac48ff1df6"}
+DEBUG 2020-09-19 23:20:32,715 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/0b045e59-1602-4ca9-bb82-31ac48ff1df6/click HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:32,715 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:32,715 [root]  [base.py base_click:42] - 点击了元素！
+INFO 2020-09-19 23:20:32,716 [root]  [page_login.py page_click_btn:34] - 点击按钮了！
+DEBUG 2020-09-19 23:20:32,716 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:20:32,732 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:32,733 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:32,733 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:20:32,733 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/1873afb7-ef19-45b7-8b1b-a3dabfe88a5f/text {"id": "1873afb7-ef19-45b7-8b1b-a3dabfe88a5f"}
+DEBUG 2020-09-19 23:20:32,746 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "GET /session/c3345f9cffc3e93aeedbc88075e21f33/element/1873afb7-ef19-45b7-8b1b-a3dabfe88a5f/text HTTP/1.1" 200 51
+DEBUG 2020-09-19 23:20:32,746 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:20:32,747 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:20:32,754 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:32,755 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:32,755 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:20:32,755 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/1873afb7-ef19-45b7-8b1b-a3dabfe88a5f/text {"id": "1873afb7-ef19-45b7-8b1b-a3dabfe88a5f"}
+DEBUG 2020-09-19 23:20:32,764 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "GET /session/c3345f9cffc3e93aeedbc88075e21f33/element/1873afb7-ef19-45b7-8b1b-a3dabfe88a5f/text HTTP/1.1" 200 51
+DEBUG 2020-09-19 23:20:32,764 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:32,764 [root]  [test_login.py test_login:36] - 用户名不存在 申请访问权限  
+INFO 2020-09-19 23:20:32,764 [root]  [test_login.py test_login:37] - 用户名不存在 申请访问权限  
+DEBUG 2020-09-19 23:20:32,764 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"LoginForm_username\"]"}
+DEBUG 2020-09-19 23:20:32,770 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:32,770 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:32,770 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:20:32,770 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:20:32,770 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/d2d583e2-efc6-4f02-a00c-dabce979f15d/clear {"id": "d2d583e2-efc6-4f02-a00c-dabce979f15d"}
+DEBUG 2020-09-19 23:20:32,798 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/d2d583e2-efc6-4f02-a00c-dabce979f15d/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:32,798 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:32,798 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:20:32,798 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/d2d583e2-efc6-4f02-a00c-dabce979f15d/value {"text": "admin", "value": ["a", "d", "m", "i", "n"], "id": "d2d583e2-efc6-4f02-a00c-dabce979f15d"}
+DEBUG 2020-09-19 23:20:32,844 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/d2d583e2-efc6-4f02-a00c-dabce979f15d/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:32,844 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:32,844 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:20:32,844 [root]  [page_login.py page_input_username:21] - 输入用户名了！
+DEBUG 2020-09-19 23:20:32,844 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"LoginForm_password\"]"}
+DEBUG 2020-09-19 23:20:32,850 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:32,850 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:32,850 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:20:32,850 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:20:32,850 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/18c8e091-87ae-4738-b726-d382a52b3b44/clear {"id": "18c8e091-87ae-4738-b726-d382a52b3b44"}
+DEBUG 2020-09-19 23:20:32,879 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/18c8e091-87ae-4738-b726-d382a52b3b44/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:32,879 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:32,879 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:20:32,879 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/18c8e091-87ae-4738-b726-d382a52b3b44/value {"text": "1111111", "value": ["1", "1", "1", "1", "1", "1", "1"], "id": "18c8e091-87ae-4738-b726-d382a52b3b44"}
+DEBUG 2020-09-19 23:20:32,923 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/18c8e091-87ae-4738-b726-d382a52b3b44/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:32,923 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:32,924 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:20:32,924 [root]  [page_login.py page_input_password:28] - 输入密码了！
+DEBUG 2020-09-19 23:20:32,924 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"SubmitLoginBTN\"]"}
+DEBUG 2020-09-19 23:20:32,929 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:32,929 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:32,929 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:20:32,929 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/0117b4f6-fe33-4629-b16e-fc764825d0e1/click {"id": "0117b4f6-fe33-4629-b16e-fc764825d0e1"}
+DEBUG 2020-09-19 23:20:35,071 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/0117b4f6-fe33-4629-b16e-fc764825d0e1/click HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:35,072 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:35,072 [root]  [base.py base_click:42] - 点击了元素！
+INFO 2020-09-19 23:20:35,072 [root]  [page_login.py page_click_btn:34] - 点击按钮了！
+DEBUG 2020-09-19 23:20:35,072 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:20:35,082 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:35,082 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:35,082 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:20:35,082 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/2a63c7cb-4ec6-43f1-b1ce-6f9a90eb3c47/text {"id": "2a63c7cb-4ec6-43f1-b1ce-6f9a90eb3c47"}
+DEBUG 2020-09-19 23:20:35,096 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "GET /session/c3345f9cffc3e93aeedbc88075e21f33/element/2a63c7cb-4ec6-43f1-b1ce-6f9a90eb3c47/text HTTP/1.1" 200 41
+DEBUG 2020-09-19 23:20:35,097 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:20:35,097 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:20:35,103 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:35,104 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:35,104 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:20:35,104 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/2a63c7cb-4ec6-43f1-b1ce-6f9a90eb3c47/text {"id": "2a63c7cb-4ec6-43f1-b1ce-6f9a90eb3c47"}
+DEBUG 2020-09-19 23:20:35,111 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "GET /session/c3345f9cffc3e93aeedbc88075e21f33/element/2a63c7cb-4ec6-43f1-b1ce-6f9a90eb3c47/text HTTP/1.1" 200 41
+DEBUG 2020-09-19 23:20:35,111 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:35,111 [root]  [test_login.py test_login:36] - 用户名和密码不匹配  
+INFO 2020-09-19 23:20:35,111 [root]  [test_login.py test_login:37] - 用户名和密码不匹配  
+DEBUG 2020-09-19 23:20:35,111 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"LoginForm_username\"]"}
+DEBUG 2020-09-19 23:20:35,118 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:35,118 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:35,118 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:20:35,118 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:20:35,118 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/3196f648-4520-45c7-bcc2-f0a2fc37d922/clear {"id": "3196f648-4520-45c7-bcc2-f0a2fc37d922"}
+DEBUG 2020-09-19 23:20:35,149 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/3196f648-4520-45c7-bcc2-f0a2fc37d922/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:35,149 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:35,150 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:20:35,150 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/3196f648-4520-45c7-bcc2-f0a2fc37d922/value {"text": "admin", "value": ["a", "d", "m", "i", "n"], "id": "3196f648-4520-45c7-bcc2-f0a2fc37d922"}
+DEBUG 2020-09-19 23:20:35,197 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/3196f648-4520-45c7-bcc2-f0a2fc37d922/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:35,198 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:35,198 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:20:35,198 [root]  [page_login.py page_input_username:21] - 输入用户名了！
+DEBUG 2020-09-19 23:20:35,198 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"LoginForm_password\"]"}
+DEBUG 2020-09-19 23:20:35,205 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:35,206 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:35,206 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:20:35,206 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:20:35,206 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/c3d1bce8-f6ce-4cad-94e4-286149c905ef/clear {"id": "c3d1bce8-f6ce-4cad-94e4-286149c905ef"}
+DEBUG 2020-09-19 23:20:35,238 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/c3d1bce8-f6ce-4cad-94e4-286149c905ef/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:35,239 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:35,239 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:20:35,239 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/c3d1bce8-f6ce-4cad-94e4-286149c905ef/value {"text": "222222", "value": ["2", "2", "2", "2", "2", "2"], "id": "c3d1bce8-f6ce-4cad-94e4-286149c905ef"}
+DEBUG 2020-09-19 23:20:35,288 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/c3d1bce8-f6ce-4cad-94e4-286149c905ef/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:35,289 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:35,289 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:20:35,289 [root]  [page_login.py page_input_password:28] - 输入密码了！
+DEBUG 2020-09-19 23:20:35,289 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"SubmitLoginBTN\"]"}
+DEBUG 2020-09-19 23:20:35,294 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:35,294 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:35,294 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:20:35,294 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/022eef12-d41f-4209-b547-9014d8f71187/click {"id": "022eef12-d41f-4209-b547-9014d8f71187"}
+DEBUG 2020-09-19 23:20:37,449 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element/022eef12-d41f-4209-b547-9014d8f71187/click HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:37,449 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:37,449 [root]  [base.py base_click:42] - 点击了元素！
+INFO 2020-09-19 23:20:37,449 [root]  [page_login.py page_click_btn:34] - 点击按钮了！
+DEBUG 2020-09-19 23:20:37,449 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:20:37,461 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:37,461 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:37,461 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:20:37,461 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/ac7661fe-d90c-424c-9a51-54d409f12c59/text {"id": "ac7661fe-d90c-424c-9a51-54d409f12c59"}
+DEBUG 2020-09-19 23:20:37,474 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "GET /session/c3345f9cffc3e93aeedbc88075e21f33/element/ac7661fe-d90c-424c-9a51-54d409f12c59/text HTTP/1.1" 200 41
+DEBUG 2020-09-19 23:20:37,474 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:20:37,474 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:20:37,481 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "POST /session/c3345f9cffc3e93aeedbc88075e21f33/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:20:37,482 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:37,482 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:20:37,482 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33/element/ac7661fe-d90c-424c-9a51-54d409f12c59/text {"id": "ac7661fe-d90c-424c-9a51-54d409f12c59"}
+DEBUG 2020-09-19 23:20:37,489 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "GET /session/c3345f9cffc3e93aeedbc88075e21f33/element/ac7661fe-d90c-424c-9a51-54d409f12c59/text HTTP/1.1" 200 41
+DEBUG 2020-09-19 23:20:37,489 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:20:37,489 [root]  [test_login.py test_login:36] - 用户名和密码不匹配  
+INFO 2020-09-19 23:20:37,489 [root]  [test_login.py test_login:37] - 密码错误
+DEBUG 2020-09-19 23:20:37,490 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - DELETE http://127.0.0.1:12916/session/c3345f9cffc3e93aeedbc88075e21f33 {}
+DEBUG 2020-09-19 23:20:37,526 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:12916 "DELETE /session/c3345f9cffc3e93aeedbc88075e21f33 HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:20:37,527 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:26:28,899 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session {"capabilities": {"firstMatch": [{}], "alwaysMatch": {"browserName": "chrome", "platformName": "any", "goog:chromeOptions": {"extensions": [], "args": []}}}, "desiredCapabilities": {"browserName": "chrome", "version": "", "platform": "ANY", "goog:chromeOptions": {"extensions": [], "args": []}}}
+DEBUG 2020-09-19 23:26:28,900 [urllib3.connectionpool]  [connectionpool.py _new_conn:205] - Starting new HTTP connection (1): 127.0.0.1:13163
+DEBUG 2020-09-19 23:26:31,575 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session HTTP/1.1" 200 720
+DEBUG 2020-09-19 23:26:31,575 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:26:31,576 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/window/maximize {}
+DEBUG 2020-09-19 23:26:33,692 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/window/maximize HTTP/1.1" 200 51
+DEBUG 2020-09-19 23:26:33,692 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:26:33,692 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/url {"url": "http://192.168.0.104:89/bugfree/index.php/site/login"}
+DEBUG 2020-09-19 23:26:35,869 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/url HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:35,870 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:35,870 [root]  [base.py __init__:23] - 打开bugfree网站！
+DEBUG 2020-09-19 23:26:35,870 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"LoginForm_username\"]"}
+DEBUG 2020-09-19 23:26:35,889 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:35,890 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:35,890 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:26:35,890 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:26:35,890 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/1b45d999-5445-497f-b8fb-694946084b88/clear {"id": "1b45d999-5445-497f-b8fb-694946084b88"}
+DEBUG 2020-09-19 23:26:35,923 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/1b45d999-5445-497f-b8fb-694946084b88/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:35,923 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:35,923 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:26:35,924 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/1b45d999-5445-497f-b8fb-694946084b88/value {"text": "admin888", "value": ["a", "d", "m", "i", "n", "8", "8", "8"], "id": "1b45d999-5445-497f-b8fb-694946084b88"}
+DEBUG 2020-09-19 23:26:35,996 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/1b45d999-5445-497f-b8fb-694946084b88/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:35,997 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:35,997 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:26:35,997 [root]  [page_login.py page_input_username:21] - 输入用户名了！
+DEBUG 2020-09-19 23:26:35,997 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"LoginForm_password\"]"}
+DEBUG 2020-09-19 23:26:36,009 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:36,011 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:36,011 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:26:36,011 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:26:36,011 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/7924d7cf-673d-4c52-8a0a-604f228c536c/clear {"id": "7924d7cf-673d-4c52-8a0a-604f228c536c"}
+DEBUG 2020-09-19 23:26:36,039 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/7924d7cf-673d-4c52-8a0a-604f228c536c/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:36,039 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:36,039 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:26:36,039 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/7924d7cf-673d-4c52-8a0a-604f228c536c/value {"text": "123456", "value": ["1", "2", "3", "4", "5", "6"], "id": "7924d7cf-673d-4c52-8a0a-604f228c536c"}
+DEBUG 2020-09-19 23:26:36,085 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/7924d7cf-673d-4c52-8a0a-604f228c536c/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:36,085 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:36,085 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:26:36,085 [root]  [page_login.py page_input_password:28] - 输入密码了！
+DEBUG 2020-09-19 23:26:36,085 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"SubmitLoginBTN\"]"}
+DEBUG 2020-09-19 23:26:36,095 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:36,096 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:36,096 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:26:36,096 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/98bebf8b-4922-4ffe-b02c-e725547ea1cc/click {"id": "98bebf8b-4922-4ffe-b02c-e725547ea1cc"}
+DEBUG 2020-09-19 23:26:38,280 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/98bebf8b-4922-4ffe-b02c-e725547ea1cc/click HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:38,281 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:38,281 [root]  [base.py base_click:42] - 点击了元素！
+INFO 2020-09-19 23:26:38,281 [root]  [page_login.py page_click_btn:34] - 点击按钮了！
+DEBUG 2020-09-19 23:26:38,281 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:26:38,294 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:38,294 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:38,294 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:26:38,294 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/7d763177-9abb-492b-9a67-d431ed07ae20/text {"id": "7d763177-9abb-492b-9a67-d431ed07ae20"}
+DEBUG 2020-09-19 23:26:38,308 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "GET /session/704692cb58509617e5c85c0f4baa6060/element/7d763177-9abb-492b-9a67-d431ed07ae20/text HTTP/1.1" 200 51
+DEBUG 2020-09-19 23:26:38,308 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:26:38,309 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:26:38,315 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:38,315 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:38,315 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:26:38,315 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/7d763177-9abb-492b-9a67-d431ed07ae20/text {"id": "7d763177-9abb-492b-9a67-d431ed07ae20"}
+DEBUG 2020-09-19 23:26:38,322 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "GET /session/704692cb58509617e5c85c0f4baa6060/element/7d763177-9abb-492b-9a67-d431ed07ae20/text HTTP/1.1" 200 51
+DEBUG 2020-09-19 23:26:38,323 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:38,323 [root]  [test_login.py test_login:36] - 用户名不存在 申请访问权限  
+INFO 2020-09-19 23:26:38,323 [root]  [test_login.py test_login:37] - 用户名不存在 申请访问权限  
+DEBUG 2020-09-19 23:26:38,323 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"LoginForm_username\"]"}
+DEBUG 2020-09-19 23:26:38,329 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:38,329 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:38,330 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:26:38,330 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:26:38,330 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/a6234817-90a3-48e8-8d04-b89cdd6b1449/clear {"id": "a6234817-90a3-48e8-8d04-b89cdd6b1449"}
+DEBUG 2020-09-19 23:26:38,359 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/a6234817-90a3-48e8-8d04-b89cdd6b1449/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:38,360 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:38,360 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:26:38,360 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/a6234817-90a3-48e8-8d04-b89cdd6b1449/value {"text": "admin", "value": ["a", "d", "m", "i", "n"], "id": "a6234817-90a3-48e8-8d04-b89cdd6b1449"}
+DEBUG 2020-09-19 23:26:38,404 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/a6234817-90a3-48e8-8d04-b89cdd6b1449/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:38,404 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:38,404 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:26:38,404 [root]  [page_login.py page_input_username:21] - 输入用户名了！
+DEBUG 2020-09-19 23:26:38,404 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"LoginForm_password\"]"}
+DEBUG 2020-09-19 23:26:38,410 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:38,410 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:38,410 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:26:38,410 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:26:38,410 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/ee1ea751-a9a1-4782-b371-7fb239aa4730/clear {"id": "ee1ea751-a9a1-4782-b371-7fb239aa4730"}
+DEBUG 2020-09-19 23:26:38,441 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/ee1ea751-a9a1-4782-b371-7fb239aa4730/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:38,441 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:38,442 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:26:38,442 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/ee1ea751-a9a1-4782-b371-7fb239aa4730/value {"text": "1111111", "value": ["1", "1", "1", "1", "1", "1", "1"], "id": "ee1ea751-a9a1-4782-b371-7fb239aa4730"}
+DEBUG 2020-09-19 23:26:38,486 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/ee1ea751-a9a1-4782-b371-7fb239aa4730/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:38,486 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:38,486 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:26:38,486 [root]  [page_login.py page_input_password:28] - 输入密码了！
+DEBUG 2020-09-19 23:26:38,486 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"SubmitLoginBTN\"]"}
+DEBUG 2020-09-19 23:26:38,492 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:38,492 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:38,492 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:26:38,492 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/bb848b45-7a75-4ae8-8af3-302584e2a6d3/click {"id": "bb848b45-7a75-4ae8-8af3-302584e2a6d3"}
+DEBUG 2020-09-19 23:26:40,649 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/bb848b45-7a75-4ae8-8af3-302584e2a6d3/click HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:40,649 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:40,649 [root]  [base.py base_click:42] - 点击了元素！
+INFO 2020-09-19 23:26:40,649 [root]  [page_login.py page_click_btn:34] - 点击按钮了！
+DEBUG 2020-09-19 23:26:40,649 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:26:40,660 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:40,660 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:40,660 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:26:40,660 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/8690d503-697a-4e76-a509-4cba475dcf93/text {"id": "8690d503-697a-4e76-a509-4cba475dcf93"}
+DEBUG 2020-09-19 23:26:40,671 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "GET /session/704692cb58509617e5c85c0f4baa6060/element/8690d503-697a-4e76-a509-4cba475dcf93/text HTTP/1.1" 200 41
+DEBUG 2020-09-19 23:26:40,672 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:26:40,672 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:26:40,680 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:40,680 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:40,680 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:26:40,680 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/8690d503-697a-4e76-a509-4cba475dcf93/text {"id": "8690d503-697a-4e76-a509-4cba475dcf93"}
+DEBUG 2020-09-19 23:26:40,686 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "GET /session/704692cb58509617e5c85c0f4baa6060/element/8690d503-697a-4e76-a509-4cba475dcf93/text HTTP/1.1" 200 41
+DEBUG 2020-09-19 23:26:40,686 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:40,686 [root]  [test_login.py test_login:36] - 用户名和密码不匹配  
+INFO 2020-09-19 23:26:40,686 [root]  [test_login.py test_login:37] - 用户名和密码不匹配  
+DEBUG 2020-09-19 23:26:40,687 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"LoginForm_username\"]"}
+DEBUG 2020-09-19 23:26:40,693 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:40,693 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:40,693 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:26:40,693 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:26:40,693 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/3266c13e-c8c1-4785-9c79-84133075291a/clear {"id": "3266c13e-c8c1-4785-9c79-84133075291a"}
+DEBUG 2020-09-19 23:26:40,722 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/3266c13e-c8c1-4785-9c79-84133075291a/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:40,723 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:40,723 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:26:40,723 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/3266c13e-c8c1-4785-9c79-84133075291a/value {"text": "admin", "value": ["a", "d", "m", "i", "n"], "id": "3266c13e-c8c1-4785-9c79-84133075291a"}
+DEBUG 2020-09-19 23:26:40,766 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/3266c13e-c8c1-4785-9c79-84133075291a/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:40,766 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:40,766 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:26:40,766 [root]  [page_login.py page_input_username:21] - 输入用户名了！
+DEBUG 2020-09-19 23:26:40,766 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"LoginForm_password\"]"}
+DEBUG 2020-09-19 23:26:40,771 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:40,772 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:40,772 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+INFO 2020-09-19 23:26:40,772 [root]  [base.py base_input:48] - 获取到了input元素！
+DEBUG 2020-09-19 23:26:40,772 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/9148251b-fbfa-434c-9817-fae7872940d9/clear {"id": "9148251b-fbfa-434c-9817-fae7872940d9"}
+DEBUG 2020-09-19 23:26:40,801 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/9148251b-fbfa-434c-9817-fae7872940d9/clear HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:40,802 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:40,802 [root]  [base.py base_input:51] - 清空了输入框！
+DEBUG 2020-09-19 23:26:40,802 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/9148251b-fbfa-434c-9817-fae7872940d9/value {"text": "222222", "value": ["2", "2", "2", "2", "2", "2"], "id": "9148251b-fbfa-434c-9817-fae7872940d9"}
+DEBUG 2020-09-19 23:26:40,843 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/9148251b-fbfa-434c-9817-fae7872940d9/value HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:40,843 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:40,843 [root]  [base.py base_input:54] - 输入内容！
+INFO 2020-09-19 23:26:40,843 [root]  [page_login.py page_input_password:28] - 输入密码了！
+DEBUG 2020-09-19 23:26:40,843 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"SubmitLoginBTN\"]"}
+DEBUG 2020-09-19 23:26:40,849 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:40,849 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:40,849 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:26:40,849 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/d8042699-f0c5-40e0-bef3-cbdca13c5a90/click {"id": "d8042699-f0c5-40e0-bef3-cbdca13c5a90"}
+DEBUG 2020-09-19 23:26:43,002 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element/d8042699-f0c5-40e0-bef3-cbdca13c5a90/click HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:43,002 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:43,002 [root]  [base.py base_click:42] - 点击了元素！
+INFO 2020-09-19 23:26:43,002 [root]  [page_login.py page_click_btn:34] - 点击按钮了！
+DEBUG 2020-09-19 23:26:43,003 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:26:43,015 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:43,016 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:43,016 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:26:43,016 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/968c1d06-a447-48f8-b692-df3e836fc5ad/text {"id": "968c1d06-a447-48f8-b692-df3e836fc5ad"}
+DEBUG 2020-09-19 23:26:43,030 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "GET /session/704692cb58509617e5c85c0f4baa6060/element/968c1d06-a447-48f8-b692-df3e836fc5ad/text HTTP/1.1" 200 41
+DEBUG 2020-09-19 23:26:43,030 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+DEBUG 2020-09-19 23:26:43,031 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - POST http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element {"using": "css selector", "value": "[id=\"login-error-div\"]"}
+DEBUG 2020-09-19 23:26:43,037 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "POST /session/704692cb58509617e5c85c0f4baa6060/element HTTP/1.1" 200 88
+DEBUG 2020-09-19 23:26:43,037 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:43,037 [root]  [base.py base_find_element:35] - 获取到了页面元素！
+DEBUG 2020-09-19 23:26:43,038 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - GET http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060/element/968c1d06-a447-48f8-b692-df3e836fc5ad/text {"id": "968c1d06-a447-48f8-b692-df3e836fc5ad"}
+DEBUG 2020-09-19 23:26:43,045 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "GET /session/704692cb58509617e5c85c0f4baa6060/element/968c1d06-a447-48f8-b692-df3e836fc5ad/text HTTP/1.1" 200 41
+DEBUG 2020-09-19 23:26:43,045 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
+INFO 2020-09-19 23:26:43,045 [root]  [test_login.py test_login:36] - 用户名和密码不匹配  
+INFO 2020-09-19 23:26:43,046 [root]  [test_login.py test_login:37] - 密码错误
+DEBUG 2020-09-19 23:26:43,047 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:388] - DELETE http://127.0.0.1:13163/session/704692cb58509617e5c85c0f4baa6060 {}
+DEBUG 2020-09-19 23:26:43,087 [urllib3.connectionpool]  [connectionpool.py _make_request:394] - http://127.0.0.1:13163 "DELETE /session/704692cb58509617e5c85c0f4baa6060 HTTP/1.1" 200 14
+DEBUG 2020-09-19 23:26:43,087 [selenium.webdriver.remote.remote_connection]  [remote_connection.py _request:440] - Finished Request
